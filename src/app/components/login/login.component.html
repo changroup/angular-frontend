@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row content">
+    <div class="greeting">
+      <p class="greeting-header">Hi Mountie</p>
+      <p class="greeting-body">welcome to Dusty Rides' online system</p>
+    </div>
+
+    <div class="reg-window">
+      <div class="card lighten-1 text-center z-depth-1">
+        <div class="title">
+          <span class="title1">Register</span>
+          <span class="title2">Participant paying the entry fee, please register the account</span>
+        </div>
+
+        <div class="card-body">
+          <div class="md-form">
+            <input type="email" name="email" [(ngModel)]="mail" id="mail" placeholder="e-mail address" class="form-control">
+            <input type="password" name="password" [(ngModel)]="password" id="password" placeholder="password" class="form-control">
+            <button type="button" class="btn-forgot" mdbWavesEffect (click)="forgot()">FORGOT YOUR PASSWORD</button>
+          </div>                  
+        </div>
+
+        <div class="btn-row">
+            <button type="button" class="btn-login" mdbWavesEffect (click)="login()">LOG IN</button>
+            <button type="button" class="btn-register" mdbWavesEffect (click)="register()">REGISTER</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
