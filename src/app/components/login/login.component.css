@@ -1,0 +1,141 @@
+.content {
+    margin-top: 240px;
+    border: 1px grey solid;
+}
+
+.greeting {
+    width: 50%;
+    font-size: 40px;
+    padding: 30px;
+    text-align: center;
+}
+
+.greeting-header {
+    color: red;
+    width: 80%;
+    text-align: left;
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+.greeting-body {
+    width: 80%;
+    text-align: left;
+    margin-left: 40px;
+}
+
+.reg-window {
+    width: 50%;
+    background: red;
+    padding: 30px;
+}
+
+.title {
+    padding: 10px;
+}
+
+.title1 {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.title2 {
+    font-size: 15px;
+    font-style: italic;
+}
+
+.forgot-btn {
+    background: white;
+    color: black;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 27px;
+    font-size: 12px;
+}
+
+.btn-row {
+    width: 100%;
+    margin-bottom: 0px;
+}
+.btn-login {
+    width: 50%;
+    height: 40px;
+    text-align: left;
+    background: #666666;
+    color: white;
+    padding-left: 25px;
+    border: none;
+    border-bottom-left-radius: 5px;
+}
+
+.btn-register {
+    width: 50%;
+    height: 40px;
+    text-align: right;
+    background: #b2b2b4;
+    color: white;
+    padding-right: 25px;
+    border: none;
+    border-bottom-right-radius: 5px;
+}
+
+.form-login {
+    padding: 0px;
+    margin-top: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.form-control {
+    border-radius: 0px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-width: 2px;
+    border-bottom-color: #727272;
+}
+
+.card {
+    border: none;
+}
+
+@media screen and (max-width: 992px) {
+    .greeting-body {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        margin-top: 80px;
+    }
+
+    .greeting {
+        width: 100%;
+    }
+    
+    .reg-window {
+        width: 100%;
+    }
+    
+    .greeting-header {
+        margin-left: 70px;
+    }
+
+    .greeting-body {
+        font-size: 40px;
+        margin-left: 70px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .content {
+        margin-top: 0px;
+    }
+    .greeting-header {
+        margin-left: 50px;
+    }
+    .greeting-body {
+        margin-left: 50px;
+    }
+}

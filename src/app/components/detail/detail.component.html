@@ -1,136 +1,127 @@
 <div class="container">
-    <div class="greeting">
-      <div class="row">
-        <div class="col-md-6">
-            <span class="title">Hello, {{user}}</span>
-        </div>
-        <div class="col-md-6 text-right btn-padding">
-            <a href="#" class="font-color">EDIT PROFILE</a>
-          </div>
-      </div>
+  <div class="row">
+    <div class="col-md-2">
     </div>
-    
-    <div class="card content">
+
+    <div class="col-12 col-md-8">
+      <div class="greeting">
+        <div class="row">
+          <div class="col-8 col-md-8">
+              <span class="title">Hello, {{user}}</span>
+          </div>
+          <div class="col-4 col-md-4 text-right btn-pos">
+              <a href="#" class="edit-btn">EDIT PROFILE</a>
+            </div>
+        </div>
+      </div>
+      
+      <div class="card content">
         <div class="head">
             <p class="head-text">Provide us with these details, Ka kopo.</p>
         </div>
-  
+        
         <div class="card-body">
-          <div class="row one-row">
-            <div class="col-md-5">
-              <label class="title-label">NAME</label>
+          <form [formGroup]="angForm">
+            <div class="form-group row">
+              <label class="col-5 col-md-5 col-form-label">NAME</label>
+              <div class="col-7 col-md-5">
+                <input type="text" class="form-control" name="d_name" formControlName="d_name" #d_name/>
+              </div>
+              
             </div>
-            <div class="col-md-6">
-              <input type="text" id="name" class="form-control">
+            
+            <div class="form-group row">
+              <label class="col-5 col-md-5 col-form-label">SURNAME</label>
+              <div class="col-7 col-md-5">
+                <input type="text" class="form-control" name="d_surname" formControlName="d_surname" #d_surname />
+              </div>
             </div>
-          </div>
-  
-          <div class="row one-row">
-            <div class="col-md-5">
-              <label class="title-label">SURNAME</label>
+    
+            <div class="form-group row">
+              <label class="col-5 col-md-5 col-form-label">ID NUMBER</label>
+              <div class="col-7 col-md-5">
+                <input type="text" class="form-control" name="d_idnumber" formControlName="d_idnumber" #d_idnumber />
+              </div>
             </div>
-            <div class="col-md-6">
-              <input type="text" id="surname" class="form-control">
+    
+            <div class="form-group row">
+              <label class="col-5 col-md-5 col-form-label">GENDER</label>
+              <div class="col-7 col-md-5">
+                <input type="text" class="form-control" name="d_gender" formControlName="d_gender" #d_gender />
+              </div>
             </div>
-          </div>
-  
-          <div class="row one-row">
-            <div class="col-md-5">
-              <label class="title-label">ID NUMBER</label>
+    
+            <div class="form-group row">
+              <label class="col-5 col-md-5 col-form-label">EMAIL ADDRESS</label>
+              <div class="col-7 col-md-5">
+                <input type="text" class="form-control" name="d_mail" formControlName="d_mail" #d_mail />
+              </div>
             </div>
-            <div class="col-md-6">
-              <input type="text" id="idnumber" class="form-control">
+    
+            <div class="form-group row">
+              <label class="col-5 col-md-5 col-form-label">CONTACT NUMBER</label>
+              <div class="col-7 col-md-5">
+                <input type="text" class="form-control" name="d_contact" formControlName="d_contact" #d_contact />
+              </div>
             </div>
-          </div>
-  
-          <div class="row one-row">
-            <div class="col-md-5">
-              <label class="title-label">GENDER</label>
-            </div>
-            <div class="col-md-6">
-              <input type="text" id="gender" class="form-control">
-            </div>
-          </div>
-  
-          <div class="row one-row">
-            <div class="col-md-5">
-              <label class="title-label">EMAIL ADDRESS</label>
-            </div>
-            <div class="col-md-6">
-              <input type="text" id="email" class="form-control">
-            </div>
-          </div>
-  
-          <div class="row one-row">
-            <div class="col-md-5">
-              <label class="title-label">CONTACT NUMBER</label>
-            </div>
-            <div class="col-md-6">
-              <input type="text" id="contact" class="form-control">
-            </div>
-          </div>
+          </form>
         </div>
-  
+    
         <div class="sep">
           <p class="sep-text">Just in case</p>
         </div>
-  
+    
         <div class="card-body">
-          <div class="row one-row">
-            <div class="col-md-5">
-              <label class="title-label">NAME</label>
+          <form [formGroup]="addForm">
+            <div class="form-group row">
+              <label class="col-5 col-md-5 col-form-label">NAME</label>
+              <div class="col-7 col-md-5">
+                <input type="text" class="form-control" name="name" formControlName="name" #name/>
+              </div>
             </div>
-            <div class="col-md-6">
-              <input type="text" [(ngModel)]="name" id="name" class="form-control">
+            
+            <div class="form-group row">
+              <label class="col-5 col-md-5 col-form-label">SURNAME</label>
+              <div class="col-7 col-md-5">
+                <input type="text" class="form-control" name="surname" formControlName="surname" #surname />
+              </div>
             </div>
-          </div>
-  
-          <div class="row one-row">
-            <div class="col-md-5">
-              <label class="title-label">SURNAME</label>
+    
+            <div class="form-group row">
+              <label class="col-5 col-md-5 col-form-label">CONTACT NUMBER</label>
+              <div class="col-7 col-md-5">
+                <input type="text" class="form-control" name="contact" formControlName="contact" #contact />
+              </div>
             </div>
-            <div class="col-md-6">
-              <input type="text" [(ngModel)]="surname" id="surname" class="form-control">
+    
+            <div class="form-group row">
+              <label class="col-5 col-md-5 col-form-label">MEDICAL AID</label>
+              <div class="col-7 col-md-5">
+                <input type="text" class="form-control" name="medi_aid" formControlName="medi_aid" #medi_aid />
+              </div>
             </div>
-          </div>
-  
-          <div class="row one-row">
-            <div class="col-md-5">
-              <label class="title-label">CONTACT NUMBER</label>
+    
+            <div class="form-group row">
+              <label class="col-5 col-md-5 col-form-label">MEDICAL AID NUMBER</label>
+              <div class="col-7 col-md-5">
+                <input type="text" class="form-control" name="medi_number" formControlName="medi_number" #medi_number />
+              </div>
             </div>
-            <div class="col-md-6">
-              <input type="text" [(ngModel)]="contact" id="contact" class="form-control">
+    
+            <div class="form-group row">
+              <label class="col-5 col-md-5 col-form-label">MEDICAL CONDITIONS</label>
+              <div class="col-7 col-md-5">
+                <input type="text" class="form-control" name="medi_condition" formControlName="medi_condition" #medi_condition />
+              </div>
             </div>
-          </div>
-  
-          <div class="row one-row">
-            <div class="col-md-5">
-              <label class="title-label">MEDICAL AID</label>
-            </div>
-            <div class="col-md-6">
-              <input type="text" [(ngModel)]="medi_aid" id="medi_aid" class="form-control">
-            </div>
-          </div>
-  
-          <div class="row one-row">
-            <div class="col-md-5">
-              <label class="title-label">MEDICAL AID NUMBER</label>
-            </div>
-            <div class="col-md-6">
-              <input type="text" [(ngModel)]="medi_number" id="medi_number" class="form-control">
-            </div>
-          </div>
-  
-          <div class="row one-row">
-            <div class="col-md-5">
-              <label class="title-label">MEDICAL CONDITIONS</label>
-            </div>
-            <div class="col-md-6">
-              <input type="text" [(ngModel)]="medi_condition" id="medi_condition" class="form-control">
-            </div>
-          </div>
+          </form>
         </div>
-        
         <button type="button" (click)="add_participant()" class="add-btn"><p class="add-text">ADD PARTICIPANT</p></button>
+      </div>
+    </div>
+
+    <div class="col-md-2 hidden-sm-down">
+      <p class="mark-part">Dusty Rides</p>
     </div>
   </div>
+</div>

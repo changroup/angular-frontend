@@ -1,13 +1,16 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
 
-  constructor() { }
+export class LoginComponent implements OnInit {
+  loginForm: FormGroup;
+  
+  constructor(private formBuilder: FormBuilder) { }
 
   mail : string;
   password : string;
@@ -25,6 +28,10 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.loginForm = this.formBuilder.group({
+      mail : ['', [Validators.required, Validators.email]],
+      password : ['', [Validators.required, Validators.minLength(6)]]
+    })
   }
 
 }

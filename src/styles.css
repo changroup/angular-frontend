@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Palanquin');
+
+body, html {
+    font-family: 'Palanquin', sans-serif;
+    background: #f3f3f3;
+}

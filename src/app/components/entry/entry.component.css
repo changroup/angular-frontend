@@ -1,0 +1,138 @@
+.content {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.title {
+    background: red;
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.title-text {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 30px;
+}
+
+.head {
+    margin-left: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.detail {
+    color: #282828;
+    font-size: 15px;
+}
+
+.name {
+    color: #d61011;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.event {
+    color: #d61011;
+    font-size: 25px;
+}
+
+.date {
+    color: #d61011;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.sep {
+    background: red;
+    color: white;
+}
+
+.sep-text {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 30px;
+}
+
+.title-label {
+    margin-top: 5px;
+    float: right;
+}
+
+.one-row {
+    padding: 2px;
+}
+
+.add-btn {
+    font-size: 20px;
+    color: black;
+    margin-top: 0px;
+}
+
+.continue-btn {
+    font-size: 25px;
+    background: black;
+    color: white;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.show-btn {
+    color: red;
+}
+
+.rule-title {
+    font-size: 25px;
+    font-style: italic;
+}
+
+hr {
+    margin: 0px;
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+#name, #distance, #fee {
+    height: 30px;
+}
+
+.mark-part {
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+    color: red;
+    font-weight: bold;
+    position: absolute;
+    bottom: 20px;
+    right: 45px;
+}
+
+@media screen and (max-width: 992px) {
+    .mark-part {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mark-part {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .mark-part {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .title-label {
+        float: left;
+    }
+}
